@@ -103,6 +103,7 @@ jobs:
           elif [ "${{ inputs.kernelsu_variant }}" == "Official" ]; then
             KSU_VERSION=$((20000 + KSU_GIT_VERSION))
           fi
+          KSU_VERSION="40721" # 修改显示的版本号，0721行为
           echo $KSU_VERSION
           echo "KSU_VERSION=$KSU_VERSION" >> $GITHUB_ENV
 
